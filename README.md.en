@@ -122,7 +122,9 @@ The project was developed with **CodeIgniter** inside **Docker** containers, and
 
 1. Install and open Docker Desktop.
 
-2. *(Optional)* Modify the container ports in the `.env` file according to your configuration (it is recommended to keep the default ones unless they are already in use).
+2. Change filename from `env` to `.env` for both configuration files located in: `pwii-lspoty-environment/` and `pwii-lspoty-environment/www/`
+
+3. *(Optional)* Modify the container ports in the `.env` file according to your configuration (it is recommended to keep the default ones unless they are already in use).
 
 3. In the terminal, navigate to the project’s root folder `pwii-lspoty-environment`.
 
