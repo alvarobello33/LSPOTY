@@ -122,20 +122,22 @@ El proyecto ha sido desarrollado con **CodeIgniter** dentro de contenedores **Do
 
 1. Instala y abre Docker Desktop.
 
-2. *(Opcional)* Modifica los puertos de los contenedores en el archivo `.env` según tu configuración (Se recomienda dejar los definidos por defecto a no ser que alguno de ellos esté en uso).
+2. Cambiar el nombre de los archivos de configuración `env` por `.env` situados en: `pwii-lspoty-environment/` y `pwii-lspoty-environment/www/`
 
-3. En la terminal, muévete a la carpeta raíz del proyecto `pwii-lspoty-environment`.
+3. *(Opcional)* Modifica los puertos de los contenedores en el archivo `.env` según tu configuración (Se recomienda dejar los definidos por defecto a no ser que alguno de ellos ya esté en uso).
 
-4. Construye las imágenes de Docker:
+4. Abre una terminal y muévete a la carpeta raíz del proyecto `pwii-lspoty-environment`.
+
+5. Construye las imágenes de Docker:
    ```bash
    docker compose build app
-5. Inicia los contenedores:
+6. Inicia los contenedores:
    ```bash
     docker compose up -d
-6. Instala las dependencias del proyecto (CodeIgniter / Composer):
+7. Instala las dependencias del proyecto (CodeIgniter / Composer):
     ```bash
     docker compose exec app composer install
-7.  Abre el proyecto en tu navegador:
+8.  Abre el proyecto en tu navegador:
     ```bash
     http://localhost:4080/
     (O desde Docker Desktop, abriendo el contenedor nginx.)
