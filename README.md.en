@@ -1,0 +1,143 @@
+# 🎵 LSPoty — Web Projects 2  
+### Group 08  
+
+**Members:**  
+- Nil Bagaria Nofre  
+- Álvaro Bello Garrido  
+
+---
+
+## 📘 Introduction
+
+**LSPoty** is a web application developed as part of the **Web Projects 2** course at **La Salle University**.  
+The project was built using the **CodeIgniter** framework, inside **Docker** containers, and developed with the **PhpStorm** IDE.
+
+LSPoty allows users to **search and play songs**, **discover artists and albums**, and **create or explore custom playlists**.  
+It integrates with the **Jamendo API** to retrieve updated music information and includes user authentication, profile management, playlists, and full playback control.
+
+---
+
+## ⚙️ Functionality
+
+### 1. 🏠 Home
+- Access the landing page (`/`).
+- Access the registration window (2 options):
+  - `Register` button (bottom of the page).
+  - `Register` button in the top-right menu.
+- Register with your email and password following the requirements.
+- Log in at `/sign-in` (2 options):
+  - From the landing page, click `Sign In` (bottom button).
+  - From the menu, click `Sign In` (top-right corner).
+
+---
+
+### 2. 🎧 Home
+- Upon entering, a list of **10 random popular songs** is displayed.
+- You can **play** a song by clicking the `Play` icon. The audio will play in the **global player** at the bottom of the page.
+- Click `+` to **add a song to a playlist** (you must have at least one playlist created beforehand).
+
+---
+
+### 3. 🔍 Search
+- Use the **search bar** to filter by name.
+- You can search among:
+  - **Songs**, **Albums**, **Artists**, or **Playlists**.
+- Each element is interactive:
+  - Click on the **artist name** → Artist details (published albums).
+  - Click on the **album name** → Album details (included songs).
+  - Click on the **song name** → Redirects to the album it belongs to.
+  - Click on the **playlist name** → Playlist details.
+
+> 💡 Within album, playlist, or artist details, you can directly play songs using the `Play` button.  
+> 💡 To return to the home page, click **LSPoty** (top left) or use the browser’s back arrow.
+
+---
+
+### 4. 👤 User Profile (`/profile`)
+- Access from the top menu → **Profile**.
+- View your **name**, **email**, **age**, and **profile picture**.
+- From **Edit Profile** (`/profile/edit`), you can update:
+  - Profile picture  
+  - Email address  
+  - Age  
+  - Password  
+
+---
+
+### 5. 🎵 Playlists (`/my-playlists`)
+- Access your playlists from the menu → **My Playlists**.
+- Allows you to:
+  - View your playlists.
+  - Play songs within each playlist.
+  - Delete or modify playlists.
+- Create new playlists from `/create-playlist`, specifying a name and image.
+- To add songs to a playlist, use the `+` button from `/home`.
+
+---
+
+### 6. 📂 Top Menu
+- **LSPoty (logo):** returns to `/home` or `/` (if not logged in).  
+- **My Playlists:** manage your playlists.  
+- **Profile:** view or edit your personal information.  
+- **Log out:** end the session and return to the *landing page*.
+
+---
+
+## 🌐 Languages
+
+The application is available in **Spanish** and **English**, with automatic browser language detection.
+
+---
+
+## 🛠️ Development Environment
+
+Framework: CodeIgniter  
+
+IDE: PhpStorm  
+
+Infrastructure: Docker containers (Docker Compose)  
+
+Language: PHP  
+
+Frontend: HTML, CSS, JavaScript  
+
+University: La Salle — Web Projects 2  
+
+---
+
+## 🧩 Main Dependencies
+
+| Dependency | Purpose |
+|-------------|----------|
+| **Guzzle** | Used to make HTTP requests to the Jamendo API. |
+| **Carbon** | Used to manage musical dates and durations. |
+
+---
+
+## 🐳 Running the Project with Docker
+
+The project was developed with **CodeIgniter** inside **Docker** containers, and its execution is managed via **Docker Compose**.
+
+### Steps to run the project:
+
+1. Install and open Docker Desktop.
+
+2. *(Optional)* Modify the container ports in the `.env` file according to your configuration (it is recommended to keep the default ones unless they are already in use).
+
+3. In the terminal, navigate to the project’s root folder `pwii-lspoty-environment`.
+
+4. Build the Docker images:
+   ```bash
+   docker compose build app
+
+5. Start the containers:
+   ```bash
+    docker compose up -d
+6. Install the project dependencies (CodeIgniter / Composer):
+    ```bash
+    docker compose exec app composer install
+7.  Open the project in your browser:
+    ```bash
+    http://localhost:4080/
+    (Or from Docker Desktop, by opening the nginx container.)
+
