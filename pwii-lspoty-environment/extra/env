@@ -1,0 +1,18 @@
+PROJECT_NAME=pwii-lspoty-environment
+PROJECT_PREFIX=pwii
+
+MYSQL_PORT=#posa aqui el port, jo tinc 4036
+NGINX_PORT=#posa aqui el port, jo tinc 4080
+XDEBUG_PORT=#posa aqui el port, jo tinc 5092
+PHPMYADMIN_PORT=#posa aqui el port, jo tinc 4081
+
+UID=1000
+ARCH=#posa aqui l'arquitectura
+USERNAME=pwuser
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_DATABASE=lspoty_environment
+DB_USERNAME=pw2user
+DB_PASSWORD=pw2pass
+DB_ROOT_PASSWORD=MJRhdDQ89whRQOlVtpsZHBdU371tSDq
