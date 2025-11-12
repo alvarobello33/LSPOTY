@@ -9,11 +9,11 @@
 
 ## 📘 Introducción
 
-**LSPoty** es una aplicación web desarrollada como parte de la asignatura **Proyectos Web 2** en la Universidad **La Salle**.  
-El proyecto ha sido construido utilizando el framework **CodeIgniter**, dentro de contenedores **Docker**, y programado con el entorno de desarrollo **PhpStorm**.
-
-LSPoty permite **buscar y reproducir canciones**, **descubrir artistas y álbumes**, y **crear o explorar playlists personalizadas**.  
+LSPoty es una aplicación web que permite **buscar y reproducir canciones**, **descubrir artistas y álbumes**, y **crear o explorar playlists personalizadas**.  
 Se integra con la **API de Jamendo** para obtener información musical actualizada, e incluye autenticación de usuarios, gestión de perfil y playlists, y control completo de reproducción.
+
+**LSPoty** ha sido desarrollada como parte de la asignatura **Proyectos Web 2** en la Universidad **La Salle**.  
+El proyecto ha sido construido utilizando el framework **CodeIgniter**, dentro de contenedores **Docker**, y programado con el entorno de desarrollo **PhpStorm**.
 
 ---
 
